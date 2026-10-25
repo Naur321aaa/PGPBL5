@@ -34,8 +34,9 @@
                 "output": "./svg"
               }
             ],
-            "styles": ["src/global.scss", "src/theme/variables.scss"],
-            "scripts": []
+            "styles": ["src/global.scss", "src/theme/variables.scss",
+                      "node_modules/leaflet/dist/leaflet.css"],
+            "scripts": ["node_modules/leaflet/dist/leaflet.js"]
           },
           "configurations": {
             "production": {
@@ -81,7 +82,7 @@
               "buildTarget": "app:build:development"
             },
             "ci": {
-              "progress": false
+              
             }
           },
           "defaultConfiguration": "development"
@@ -97,7 +98,9 @@
           "options": {
             "tsConfig": "tsconfig.spec.json",
             "buildTarget": "::development",
-            "setupFiles": ["src/test-setup.ts"]
+            "setupFiles": [
+              "src/test-setup.ts"
+            ]
           },
           "configurations": {
             "ci": {
@@ -120,7 +123,8 @@
   "cli": {
     "schematicCollections": [
       "@ionic/angular-toolkit"
-    ]
+    ],
+    "analytics": "405a497b-cf50-40be-8829-f458627bf8cb"
   },
   "schematics": {
     "@ionic/angular-toolkit:component": {

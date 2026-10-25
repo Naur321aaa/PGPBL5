@@ -1,0 +1,52 @@
+/* Warna latar popup */
+:host ::ng-deep .leaflet-popup-content-wrapper {
+  background: #fff0f7 !important;
+  border-radius: 12px;
+}
+
+/* Warna segitiga popup */
+:host ::ng-deep .leaflet-popup-tip {
+  background: #fff0f7 !important;
+}
+
+/* Warna teks nama titik */
+:host ::ng-deep .point-name {
+  color: #c50578 !important;
+}
+
+:host ::ng-deep .point-popup {
+  text-align: center;
+  padding: 5px;
+}
+
+:host ::ng-deep .point-name {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+:host ::ng-deep .popup-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 7px 12px;
+  margin: 3px;
+  border: none;
+  border-radius: 5px;
+  color: white !important;
+  font-size: 11px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  min-width: 75px;
+}
+
+:host ::ng-deep .edit-btn {
+  background-color: #f96dca !important;
+}
+
+:host ::ng-deep .delete-btn {
+  background-color: #e92778 !important;
+}

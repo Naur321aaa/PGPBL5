@@ -1,17 +1,277 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Tab 2
+    <ion-title style="color: #0b0b0b; font-size: 20px; font-weight: bold;">
+      <ion-icon name="library-outline"></ion-icon>
+      Jadwal Kuliah
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-accordion-group>
+  <ion-accordion value="senin">
+    <ion-item slot="header" color="light">
+      <ion-label style="color: #d4007f; font-weight: bold;">Senin</ion-label>
+    </ion-item>
+    <div slot="content" class="ion-padding">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <b>Mata Kuliah:</b><br>
+            Pendidikan Agama Islam
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <b>Jam:</b><br>
+            09.00 - 11.00
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <b>Dosen:</b><br>
+            Agus Kurniawan, S.T., M.T., Ph.D.
+          </ion-col>
+        </ion-row>
+      </ion-grid>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <b>Mata Kuliah:</b><br>
+            Pancasila
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <b>Jam:</b><br>
+            11.15 - 12.55
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <b>Dosen:</b><br>
+            Sri Yulita Pramulia Panani, S.Fil., M.Phil.
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <b>Mata Kuliah:</b><br>
+            Kewarganegaraan
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <b>Jam:</b><br>
+            13.00 - 14.40
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <b>Dosen:</b><br>
+            	Dr. Hastanti Widy Nugroho, S.S., M.Hum.
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+    </div>
+  </ion-accordion>
+
+  <ion-accordion value="selasa">
+    <ion-item slot="header" color="light">
+      <ion-label style="color: #d4007f; font-weight: bold;">Selasa</ion-label>
+    </ion-item>
+
+    <div slot="content" class="ion-padding">
+
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <b>Mata Kuliah:</b><br>
+            Praktikum Pemrograman Geospasial: Bergerak Lanjut
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <b>Jam:</b><br>
+            11.00 - 13.00
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <b>Dosen:</b><br>
+            Raden Muhammad Anshori, S.Si., M.Sc.
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+    </div>
+  </ion-accordion>
+
+  <ion-accordion value="rabu">
+    <ion-item slot="header" color="light">
+      <ion-label style="color: #d4007f; font-weight: bold;">Rabu</ion-label>
+    </ion-item>
+
+    <div slot="content" class="ion-padding">
+
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <b>Mata Kuliah:</b><br>
+            Ilmu Kreatif Dan Kewirausahaan
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <b>Jam:</b><br>
+            11.10 - 12.50
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <b>Dosen:</b><br>
+            Dr. Barandi Sapta Widartono, S.Si., M.Si., M.Sc.
+            <br>
+            Gatot Kurniawan, S.Si., M.Sc.
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <b>Mata Kuliah:</b><br>
+            Praktikum Sains Data Geospasial Lanjut
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <b>Jam:</b><br>
+            13.00 - 16.00
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <b>Dosen:</b><br>
+             Ade Febri Sandhini Putri, S.Si., M.Sc.
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+    </div>
+  </ion-accordion>
+
+  <ion-accordion value="kamis">
+    <ion-item slot="header" color="light">
+      <ion-label style="color: #d4007f; font-weight: bold;">Kamis</ion-label>
+    </ion-item>
+
+    <div slot="content" class="ion-padding">
+
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <b>Mata Kuliah:</b><br>
+            Metodologi Penelitian
+            <br>
+            (Ruang Hall)
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <b>Jam:</b><br>
+            11.10 - 12.50
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <b>Dosen:</b><br>
+             Dr. Like Indrawati, S.Si., M.Sc
+             <br>
+             Dr. Nur Mohammad Farda, S.Si., M.Cs.
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <b>Mata Kuliah:</b><br>
+            Praktikum SIG Aplikatif Untuk Pemetaan Pesisir Dan Kelautan
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <b>Jam:</b><br>
+            13.00 - 15.00
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <b>Dosen:</b><br>
+             Dr. Like Indrawati, S.Si., M.Sc
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+    </div>
+  </ion-accordion>
+
+  <ion-accordion value="jumat">
+    <ion-item slot="header" color="light">
+      <ion-label style="color: #d4007f; font-weight: bold;">Jumat</ion-label>
+    </ion-item>
+
+    <div slot="content" class="ion-padding">
+
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <b>Mata Kuliah:</b><br>
+            Bahasa Indonesia
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <b>Jam:</b><br>
+            07.15 - 08.55
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <b>Dosen:</b><br>
+            Arum Rindu Sekar Kasih
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <b>Mata Kuliah:</b><br>
+            Praktikum Aplikasi SIG Untuk Sumber Daya Air
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <b>Jam:</b><br>
+            13.00 - 15.00
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <b>Dosen:</b><br>
+             Dr. Like Indrawati, S.Si., M.Sc
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+    </div>
+  </ion-accordion>
+
+</ion-accordion-group>
 </ion-content>

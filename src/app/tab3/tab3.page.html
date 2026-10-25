@@ -1,17 +1,66 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Tab 3
+    <ion-title style="color: #0b0b0b; font-size: 20px; font-weight: bold;">
+      <ion-icon name="cube-outline"></ion-icon>
+      Formulir Tambahan Mata Kuliah
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-card>
+    <ion-card-content>
+
+      <ion-grid>
+
+        <ion-row>
+          <ion-col size="4">
+            <b style="color: #d4007f;">Mata Kuliah</b>
+          </ion-col>
+
+          <ion-col size="8">
+            <ion-input
+              placeholder="isikan nama mata kuliah"
+              style="--color: #888888; --placeholder-color: #888888;">
+            </ion-input>
+          </ion-col>
+
+        </ion-row>
+
+        <ion-row>
+          <ion-col size="4">
+            <b style="color: #d4007f;">Jam</b>
+          </ion-col>
+
+          <ion-col size="8">
+            <ion-input
+              placeholder="isikan jam kuliah"
+              style="--color: #888888; --placeholder-color: #888888;">
+            </ion-input>
+          </ion-col>
+
+        </ion-row>
+
+        <ion-row>
+          <ion-col size="4">
+            <b style="color: #d4007f;">Dosen Pengampu</b>
+          </ion-col>
+
+          <ion-col size="8">
+            <ion-input
+              placeholder="isikan nama dosen pengampu"
+              style="--color: #888888; --placeholder-color: #888888;">
+            </ion-input>
+          </ion-col>
+
+        </ion-row>
+
+      </ion-grid>
+
+      <ion-button style="--background: #b5066f;">Simpan</ion-button>
+
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>

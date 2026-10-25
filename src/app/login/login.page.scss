@@ -1,0 +1,90 @@
+ion-content {
+  --background: #f8eaf2;
+}
+
+ion-card-title {
+  text-align: center;
+}
+
+ion-card-subtitle {
+  text-align: center;
+}
+
+.card-section {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+ion-card {
+  width: 100%;
+  max-width: 400px;
+  margin: 0;
+  border-radius: 15px;
+}
+
+ion-item {
+  --border-radius: 12px;
+  --padding-start: 12px;
+  --highlight-color-focused: #000000;
+  --highlight-color-valid: #000000;
+  --highlight-color-invalid: #000000;
+  margin-bottom: 14px;
+}
+
+ion-item ion-label {
+  color: #000000 !important;
+}
+
+ion-item.ion-focused ion-label,
+ion-item.item-has-focus ion-label {
+  color: #000000 !important;
+}
+
+ion-input {
+  --highlight-color-focused: #000000;
+  --highlight-color-valid: #000000;
+  --highlight-color-invalid: #000000;
+  --color: #000000;
+  --placeholder-color: #777777;
+}
+
+ion-input-password-toggle {
+  --ion-color-primary: #d4007f;
+}
+
+.welcome-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  justify-content: center;
+}
+
+.welcome-section img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+.welcome-text h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #d4007f;
+}
+
+.welcome-text p {
+  margin: 3px 0 0;
+  font-size: 16px;
+  color: #666;
+}
+
+.divider {
+  color: #d4007f;
+  font-size: 25px;
+  font-weight: 300;
+}

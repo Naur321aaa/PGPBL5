@@ -1,0 +1,84 @@
+<ion-content [fullscreen]="true">
+  <div class="card-section">
+    <ion-card>
+
+      <ion-card-header>
+
+        <div class="welcome-section">
+          <img src="assets/iconsplashscreen.png" alt="">
+          <span class="divider">|</span>
+
+        <div class="welcome-text">
+          <h2>WELCOME BACK!</h2>
+          <p>Yuk, mulai aktivitasmu!</p>
+        </div>
+      </div>
+
+        <ion-card-title style="color: #000000; Font-size: 24px; font-weight: bold;">Register</ion-card-title>
+        <ion-card-subtitle>
+          Create a new account
+        </ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+
+        <ion-item>
+          <ion-input
+            label="Email"
+            labelPlacement="floating"
+            type="email"
+            [(ngModel)]="email"
+            placeholder="Enter your email">
+          </ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input
+            type="password"
+            label="Password"
+            labelPlacement="floating"
+            placeholder="Enter your password"
+            [(ngModel)]="password" >
+
+            <ion-input-password-toggle
+              slot="end">
+            </ion-input-password-toggle>
+
+          </ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input
+            type="password"
+            label="Confirm Password"
+            labelPlacement="floating"
+            placeholder="Enter your confirm password"
+            [(ngModel)]="confirmPassword">
+
+            <ion-input-password-toggle
+              slot="end">
+            </ion-input-password-toggle>
+
+          </ion-input>
+        </ion-item>
+
+        <ion-button
+          expand="block"
+          style="--background: #d4007f;"
+          (click)="register()" >
+          Register
+        </ion-button>
+
+        <ion-button
+          expand="block"
+          fill="clear"
+          style="--color: #d4007f;"
+          routerLink="/login">
+          Already have an account? Login
+        </ion-button>
+
+      </ion-card-content>
+
+    </ion-card>
+  </div>
+</ion-content>
